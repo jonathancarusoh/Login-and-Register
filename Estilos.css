@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif ;
+}
+
+body{
+    background-color: rgb(228, 134, 134);
+    height: 100vh;
+ 
+   
+}
+
+.contenedor__todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.caja__trasera {
+    color: #fff;
+    margin-top: 30px;
+    display: flex;
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+    background-color: rgb(135, 135, 223);
+    width: 750px;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+
+
+.caja__trasera div{
+    margin: 100px 40px;
+    transition: all 500ms;
+}
+
+.caja__trasera div p{
+    margin-top: 30px;
+    margin-left: 20px;
+  
+}
+
+.caja__trasera div button {
+    margin-top: 30px;
+   
+  
+}
+
+.caja__trasera div h3 {
+    font-weight: 400;
+    font-size: 1.4em;
+    margin-left: 20px;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    outline: none;
+    transition: all 300ms;
+    
+}
+
+.button__registrarse{
+    margin-left: 50px;
+}
+
+.caja__trasera button:hover {
+    background-color: white;
+    color: blue;
+}
+
+/*Formularios*/
+
+.contenedor__login-register {
+    align-items: center;   
+    position: relative; 
+    border-radius: 15px;
+  top: -175px;
+  left: -680px;
+  transition: left 600ms cubic-bezier(0.175, 0.885, 0.320, 1.27);
+}
+
+
+.contenedor__login-register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    position: absolute; 
+    border-radius: 15px;
+}
+
+.contenedor__login-register form h2 {
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+
+.contenedor__login-register form input{
+height: 30px;
+width: 280px;
+padding: 10px;
+margin-top:  15px;
+color: blueviolet;
+border-color: rgb(66, 51, 237);
+border-radius: 5px;
+}
+
+
+.contenedor__login-register form button{
+    height: 30px;
+    width: 250px;
+    margin-top:  15px;
+    outline: none;
+    border: 2px solid rgb(196, 132, 255);
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(160, 66, 173);
+    outline: none;
+    transition: all 300ms;
+    
+    
+}
+
+
+
+.formulario__login {
+    position: relative;
+    display: block;
+   
+  
+}
+
+
+.formulario__login form {
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.formulario__register {
+    position: relative;
+     display: none;
+    
+}
+
+@media screen and (max-width: 850px) {
+ 
+    
+    .caja__trasera{
+    flex-direction: column;
+    max-width: 350px;
+    align-items: center;
+    margin-bottom: 30px;
+   
+    }
+
+    
+
+    
+.contenedor__login-register{
+    top:-340px;
+    left: -335px;
+    transition: top 600ms cubic-bezier(0.175, 0.885, 0.320, 1.27);
+}
+
+
+
+}
